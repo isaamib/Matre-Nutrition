@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matre Nutrition</title>
+    <link rel="icon" type="image/png" href="images/icons/ICONMT.ico"/>
+    <link rel="stylesheet" href="css/initstyles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#"><img src="iconlogomatre.png" alt="Logo da Loja" width="100px" height="50px"></a>
+
+            <section class="categorias">
+                <ul>
+                    <li>Whey Protein
+                        <ul class="submenu">
+                            <li><a href="WC.html">Concentrado</a></li>
+                            <li><a href="WC.html">Isolado</a></li>
+                            <li><a href="WC.html">Hidrolisado</a></li>
+                            <li><a href="WC.html">Hipercalóricos</a></li>
+                        </ul>
+                    </li>
+                    <li>Pré-treinos
+                        <ul class="submenu">
+                            <li><a href="WC.html">Cápsula</a></li>
+                            <li><a href="WC.html">Em pó</a></li>
+                            <li><a href="WC.html">Energy Drink</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="WC.html">Hipercalóricos</a></li>
+                    
+                    <li>Vitaminas e Minerais
+                        <ul class="submenu">
+                            <li><a href="WC.html">Complexo B</a></li>
+                            <li><a href="WC.html">Vitamina C</a></li>
+                            <li><a href="WC.html">Vitamina D</a></li>
+                            <li><a href="WC.html">Ômega 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="WC.html">Barras de Proteína</a></li>
+                </ul>
+            </section>
+
+              <!-- Adicionando botões discretos para Login e Cadastro -->
+        <div class="user-auth">
+            <a href="login.html" class="auth-link">Login</a>
+            <a href="cadastro.html" class="auth-link">Cadastre-se</a>
+        </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="slide1.png" alt="Image 1"></div>
+                    <div class="slide"><img src="slide2.png" alt="Image 2"></div>
+                    <div class="slide"><img src="slider3.png" alt="Image 3"></div>
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="search-container">
+            <form>
+              <input type="text" placeholder="Pesquisar...">
+              <button type="submit">Pesquisar</button>
+            </form>
+          </section>
+
+          <div id="promo-banner">
+            <button id="close-banner">&times;</button>
+            <img src="iconsproducts/BANNERPROMORELAMPAGO.png" alt="Produto" id="product-image">
+            <span>Promoção relâmpago!</span>
+            <div id="countdown"></div>
+            <a href="URL_DO_SEU_PRODUTO" id="buy-link">Compre agora!</a>
+        </div>
+
+        <section class="produtos">
+            <h2>Mais Vendidos</h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="iconsproducts/produto1wheychoc.png" alt="Imagem do Produto 1">
+                    <h3>WHEY STRAWB 900G</h3>
+                    <p>Nutrição completa para atletas</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto2wheychoc.png" alt="Imagem do Produto 2">
+                    <h3>WHEY CHOC 900g</h3>
+                    <p>Rico em aminoácidos essenciais</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto3gwhey30gcookie.png" alt="Imagem do Produto 3">
+                    <h3>WHEY COOKIES DOSE</h3>
+                    <p>Alto valor biológico  em dose</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto4supercoffe.png" alt="Imagem do Produto 4">
+                    <h3>SUPER COFFE</h3>
+                    <p>Desperte seu potencial</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto5energy.png" alt="Imagem do Produto 5">
+                    <h3>ENERGY PRÉ TREINO</h3>
+                    <p>Energia instantânea</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto6creatinja1kilo.png" alt="Imagem do Produto 6">
+                    <h3>CREATINA 1kg</h3>
+                    <p>100% pura e internacional</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto7creatinanoram.png" alt="Imagem do Produto 7">
+                    <h3>CREATINA 250g</h3>
+                    <p>100% pura e internacional</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto8wheybar.png" alt="Imagem do Produto 8">
+                    <h3>WHEY BAR</h3>
+                    <p>Barra de Proteína - Display 12u</p>
+                    <button>Comprar</button>
+                </div>
+                <!-- Mais produtos aqui -->
+
+
+            </div>
+
+            <div class="btn-wrapper">
+                <button class="btn-veja-mais">VEJA MAIS</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Sua Loja de Suplementos &copy; 2024</p>
+        <h3>Informações</h3>
+        <ul>
+            <li>Política de Privacidade</li>
+            <li>Envio e Entrega</li>
+            <li>Devoluções e Reembolsos</li>
+        </ul>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

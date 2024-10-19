@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Matre Nutrition</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/ICONMT.ico"/>
+	<link rel="stylesheet" href="css/cadastro.css">
+
+</head>
+
+<body>
+	<header>
+	<nav>
+            <a href="index.html"><img src="iconlogomatre.png" alt="Logo da Loja" width="100px" height="50px"></a>
+	</nav>
+	</header>
+	
+	<main>	
+		<form class="form">
+			<p class="title">Cadastro </p>
+			<p class="message">Faça seu cadastro e acesse todo nosso conteúdo. </p>
+			
+			<div class="flex">
+				<label>
+					<input class="input" type="text" placeholder="" required="">
+					<span>Nome</span>
+				</label>
+		
+				<label>
+					<input class="input" type="text" placeholder="" required="">
+					<span>Sobrenome</span>
+				</label>
+			</div>  
+			
+			<label>
+				<input class="input" type="email" placeholder="" required="">
+				<span>Email</span>
+			</label>
+		
+			<label>
+				<input class="input" type="date" placeholder="" required="">
+				<span></span>
+			</label>
+		
+			<label>
+				<input class="input" type="text" placeholder="" required="" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+				<span>CPF</span>
+			</label> 
+		
+			<label>
+				<input class="input" type="password" placeholder="" required="">
+				<span>Senha</span>
+			</label>
+		
+			<label>
+				<input class="input" type="password" placeholder="" required="">
+				<span>Confirmar senha</span>
+			</label>
+		
+			<label class="cl-checkbox">
+				<input checked="" type="checkbox">
+				<span>Quero receber promoções via WhatsApp.</span>
+			</label>
+		
+			<label class="cl-checkbox">
+				<input checked="" type="checkbox">
+				<span>Quero atualizações de pedido via WhatsApp.</span>
+			</label>
+		
+			<button class="submit">Confirmar</button>
+			<p class="signin">Já possui uma conta? <a href="login.html">Login</a></p>
+		</form>
+
+</main>
+
+	<footer>
+		<p>Sua Loja de Suplementos &copy; 2024</p>
+	 </footer>
+	
+	<script src="script.js"></script>
+
+</body>
+
+</html>

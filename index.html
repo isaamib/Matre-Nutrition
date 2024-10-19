@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matre Nutrition</title>
+    <link rel="icon" type="image/png" href="images/icons/ICONMT.ico"/>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="iconlogomatre.png" alt="Logo da Loja" width="100px" height="50px"></a>
+
+            <section class="categorias">
+                <ul>
+                    <li>Whey Protein
+                        <ul class="submenu">
+                            <li><a href="WC.html">Concentrado</a></li>
+                            <li><a href="WC.html">Isolado</a></li>
+                            <li><a href="WC.html">Hidrolisado</a></li>
+                            <li><a href="WC.html">Hipercalóricos</a></li>
+                        </ul>
+                    </li>
+                    <li>Pré-treinos
+                        <ul class="submenu">
+                            <li><a href="WC.html">Cápsula</a></li>
+                            <li><a href="WC.html">Em pó</a></li>
+                            <li><a href="WC.html">Energy Drink</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="WC.html">Hipercalóricos</a></li>
+                    
+                    <li>Vitaminas e Minerais
+                        <ul class="submenu">
+                            <li><a href="WC.html">Complexo B</a></li>
+                            <li><a href="WC.html">Vitamina C</a></li>
+                            <li><a href="WC.html">Vitamina D</a></li>
+                            <li><a href="WC.html">Ômega 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="WC.html">Barras de Proteína</a></li>
+                </ul>
+            </section>
+
+              <!-- Adicionando botões discretos para Login e Cadastro -->
+        <div class="user-auth">
+            <a href="login.html" class="auth-link">Login</a>
+            <a href="cadastro.html" class="auth-link">Cadastre-se</a>
+        </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="banner">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="slide1.png" alt="Image 1"></div>
+                    <div class="slide"><img src="slide2.png" alt="Image 2"></div>
+                    <div class="slide"><img src="slider3.png" alt="Image 3"></div>
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </section>
+
+        <div class="search-header">
+            <input id="search-header" placeholder="Pesquisar" class="search-header__input" type="text" />
+            <button class="search-header__button">
+                <svg
+                    fill="none"
+                    viewBox="0 0 18 18"
+                    height="18"
+                    width="18"
+                    class="search-header__icon"
+                >
+                    <path
+                        fill="#3A3A3A"
+                        d="M7.132 0C3.197 0 0 3.124 0 6.97c0 3.844 3.197 6.969 7.132 6.969 1.557 0 2.995-.49 4.169-1.32L16.82 18 18 16.847l-5.454-5.342a6.846 6.846 0 0 0 1.718-4.536C14.264 3.124 11.067 0 7.132 0zm0 .82c3.48 0 6.293 2.748 6.293 6.15 0 3.4-2.813 6.149-6.293 6.149S.839 10.37.839 6.969C.839 3.568 3.651.82 7.132.82z"
+                    ></path>
+                </svg>
+            </button>
+        </div>
+        
+
+        <button data-quantity="0" class="btn-cart">
+            <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+              <title>icon-cart</title>
+              <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+            </svg>
+            <span class="quantity"></span>
+          </button>
+
+          <div id="promo-banner">
+            <button id="close-banner">&times;</button>
+            <img src="iconsproducts/BANNERPROMORELAMPAGO.png" alt="Produto" id="product-image">
+            <span>Promoção relâmpago!</span>
+            <div id="countdown"></div>
+            <a href="URL_DO_SEU_PRODUTO" id="buy-link">Compre agora!</a>
+        </div>
+
+        <section class="produtos">
+            <h2></h2>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="iconsproducts/produto1wheychoc.png" alt="Imagem do Produto 1">
+                    <h3>WHEY STRAWB 900G</h3>
+                    <strong>R$ 49,99</strong>
+                    <p>Nutrição completa para atletas</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto2wheychoc.png" alt="Imagem do Produto 2">
+                    <h3>WHEY CHOC 900g</h3>
+                    <strong>R$ 49,99</strong>
+                    <p>Rico em aminoácidos essenciais</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto3gwhey30gcookie.png" alt="Imagem do Produto 3">
+                    <h3>WHEY COOKIES DOSE</h3>
+                    <strong>R$ 49,99</strong>
+                    <p>Alto valor biológico  em dose</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto4supercoffe.png" alt="Imagem do Produto 4">
+                    <h3>SUPER COFFE</h3>
+                    <strong>R$ 49,99</strong>
+                    <p>Desperte seu potencial</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto5energy.png" alt="Imagem do Produto 5">
+                    <h3>ENERGY PRÉ TREINO</h3>
+                    <strong>R$ 49,99</strong>
+                    <p>Energia instantânea</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto6creatinja1kilo.png" alt="Imagem do Produto 6">
+                    <h3>CREATINA 1kg</h3>
+                    <strong>R$ 49,99</strong>
+                    <p>100% pura e internacional</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto7creatinanoram.png" alt="Imagem do Produto 7">
+                    <h3>CREATINA 250g</h3>
+                    <strong>R$ 49,99</strong>
+                    <p>100% pura e internacional</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <div class="produto">
+                    <img src="iconsproducts/produto8wheybar.png" alt="Imagem do Produto 8">
+                    <h3>WHEY BAR</h3>
+                    <strong>R$ 49,99</strong>
+                    <p>Barra de Proteína - Display 12u</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+                <!-- Mais produtos aqui -->
+
+            </div>
+
+            <!--botão veja mais-->
+            <div class="btn-wrapper">
+                <button class="btn-veja-mais">VEJA MAIS</button>
+            </div>
+
+            <!-- Card do carrinho de compras -->
+            <div id="cart-card" class="cart-card hidden">
+                <button id="close-cart-btn" class="close-btn">&times;</button> <!-- Botão de fechar -->
+                <h2>Seu Carrinho</h2>
+                <div class="cart-items">
+                <!-- Detalhes dos produtos vão aqui -->
+                <p>Nenhum item no carrinho</p>
+                </div>
+                <div class="cart-total">
+                <p>Total: <span id="cart-total-amount">R$ 0,00</span></p>
+                </div>
+                <button id="checkout-btn">Finalizar Compra</button>
+            </div>
+
+            <!--botão veja mais-->
+
+                <section class="flutuante">
+                    <img src="slide1.png" width="100%" height="200px">
+                    </p><div class="overlay"></div>
+                    <button class="btn-flutuante">Quero saber mais</button>
+                </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Sua Loja de Suplementos &copy; 2024</p>
+        <h3>Informações</h3>
+        <ul>
+            <li>Política de Privacidade</li>
+            <li>Envio e Entrega</li>
+            <li>Devoluções e Reembolsos</li>
+        </ul>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

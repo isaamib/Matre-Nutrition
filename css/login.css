@@ -1,0 +1,312 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%; /* Garante que eles ocupem a tela inteira */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Para alinhar os elementos em uma coluna */
+}
+
+main {
+  flex: 1; /* Faz o main crescer para ocupar o espaço disponível */
+  padding: 20px;
+}
+
+nav {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: #000000; 
+  padding: 10px 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 370px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    border: 2px royalblue;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 200px auto 50px;
+    position: relative;
+    
+  }
+  
+  .title {
+    font-size: 28px;
+    color: rgb(253, 101, 0);;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: rgb(253, 101, 0);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(253, 101, 0);;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+    
+  }
+  
+  .signin a {
+    color: rgb(253, 101, 0);;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline rgb(253, 101, 0);;
+  }
+  
+  .flex {
+    display: flex;
+    width: 97%;  
+}
+  
+  .form label {
+    position: relative;
+
+  }
+  
+  .form label .input {
+    width: 94%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: rgb(253, 101, 0);;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(253, 143, 0);;
+    cursor: pointer;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  .cl-checkbox {
+    position: relative;
+    display: inline-block;
+   }
+   
+   /* Input */
+   .cl-checkbox > input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    left: -10px;
+    top: -8px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: grey;
+    box-shadow: none;
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.2s;
+   }
+   
+   /* Span */
+   .cl-checkbox > span {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+   }
+   
+   /* Box */
+   .cl-checkbox > span::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 3px 11px 3px 1px;
+    border: solid 2px;
+    /* Safari */
+    border-color: grey;
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    transition: border-color 0.2s, background-color 0.2s;
+   }
+   
+   /* Checkmark */
+   .cl-checkbox > span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    width: 10px;
+    height: 5px;
+    border: solid 2px transparent;
+    border-right: none;
+    border-top: none;
+    transform: translate(3px, 4px) rotate(-45deg);
+   }
+   
+   /* Checked, Indeterminate */
+   .cl-checkbox > input:checked,
+   .cl-checkbox > input:indeterminate {
+    background-color: #fff;
+   }
+   
+   .cl-checkbox > input:checked + span::before,
+   .cl-checkbox > input:indeterminate + span::before {
+    border-color: rgb(253, 101, 0);
+    background-color: rgb(253, 101, 0);
+   }
+   
+   .cl-checkbox > input:checked + span::after,
+   .cl-checkbox > input:indeterminate + span::after {
+    border-color: #fff;
+   }
+   
+   .cl-checkbox > input:indeterminate + span::after {
+    border-left: none;
+    transform: translate(4px, 3px);
+   }
+   
+   /* Hover, Focus */
+   .cl-checkbox:hover > input {
+    opacity: 0.04;
+   }
+   
+   .cl-checkbox > input:focus {
+    opacity: 0.12;
+   }
+   
+   .cl-checkbox:hover > input:focus {
+    opacity: 0.16;
+   }
+   
+   /* Active */
+   .cl-checkbox > input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+   }
+   
+   .cl-checkbox > input:active + span::before {
+    border-color: #ffffff;
+   }
+   
+   .cl-checkbox > input:checked:active + span::before {
+    border-color: transparent;
+    background-color: grey;
+   }
+   
+   /* Disabled */
+   .cl-checkbox > input:disabled {
+    opacity: 0;
+   }
+   
+   .cl-checkbox > input:disabled + span {
+    color: grey;
+    cursor: initial;
+   }
+   
+   .cl-checkbox > input:disabled + span::before {
+    border-color: currentColor;
+   }
+   
+   .cl-checkbox > input:checked:disabled + span::before,
+   .cl-checkbox > input:indeterminate:disabled + span::before {
+    border-color: transparent;
+    background-color: currentColor;
+   }
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

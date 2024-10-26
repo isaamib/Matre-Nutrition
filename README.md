@@ -1,4 +1,4 @@
-# Matre Nutrition 🏋️‍♂️
+# Matre Nutrition 🧡
 
 Matre Nutrition é um site de e-commerce para fins de estudo focado na venda de suplementos alimentares, oferecendo uma experiência de compra fácil e rápida. Este projeto visa aprimorar habilidades de desenvolvimento front-end e back-end.
 

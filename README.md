@@ -1,33 +1,76 @@
-# Matre Nutrition 🧡
+# [🇺🇸] Matre Nutrition 🧡
+A supplement e-commerce project for educational purposes, focused on front-end (HTML, CSS, JavaScript) with future back-end integration (Python).
 
-Matre Nutrition é um site de e-commerce para fins de estudo focado na venda de suplementos alimentares, oferecendo uma experiência de compra fácil e rápida. Este projeto visa aprimorar habilidades de desenvolvimento front-end e back-end.
+🔗 Live Demo: https://isaamib.github.io/Matre-Nutrition/
+
+## Features ✨
+Responsive UI for mobile and desktop.
+
+Shopping Cart (add/remove items, total calculation in progress).
+
+Flash Sale with interactive countdown (JavaScript).
+
+Scalable structure for future login/signup integration.
+
+## Tech Stack 💻
+Front-End	Back-End (Future)
+✔ HTML5	✔ Python
+✔ CSS3 (Flexbox/Grid)	✔ REST APIs
+✔ JavaScript (DOM, localStorage)	✔ Database
+
+## Goals 🎯
+Master advanced HTML/CSS (semantics, accessibility, Grid/Flexbox).
+
+Implement vanilla JavaScript logic (DOM manipulation, events).
+
+Lay groundwork for back-end integration (modular structure).
+
+## Future Improvements 🔧
+User authentication and profile management.
+
+Payment system (e.g., Stripe, Mercado Pago).
+
+Optimizations: SEO, performance (Lighthouse), testing.
+
+## Contributions 🤝
+Contributions are welcome! Open an issue or submit a pull request.
+
+--
+
+# [🇧🇷] Matre Nutrition 🧡
+
+E-commerce de suplementos alimentares desenvolvido para estudos, com foco em front-end (HTML, CSS, JavaScript) e futura integração back-end (Python).
+
+🔗 Link do projeto: https://isaamib.github.io/Matre-Nutrition/
 
 ## Funcionalidades ✨
+Interface responsiva adaptada para mobile e desktop.
 
-- **Home:** Página inicial com destaque para os produtos mais vendidos e promoções.
-- **Produtos:** Lista de suplementos com descrição, imagem e preço.
-- **Carrinho de Compras:** Sistema de carrinho com funcionalidade de adicionar/remover produtos e calcular o total ainda em desenvolvimento e futura integração.
-- **Promoção Relâmpago:** Banner flutuante com cronômetro de 30 minutos para promoções exclusivas.
-- **Sistema de Login e Cadastro:** Sistema em desenvolvimento.
-- **Responsividade:** Layout adaptável para dispositivos móveis e desktops.
+Carrinho de compras com adição/remoção de produtos e cálculo de total (em desenvolvimento).
 
-## Tecnologias Utilizadas 💻
+Promoção relâmpago com cronômetro interativo (JavaScript).
 
-- **HTML5:** Estrutura do site.
-- **CSS3:** Estilização e design responsivo.
-- **JavaScript:** Funcionalidades interativas, incluindo o carrinho de compras e promoções.
-- **Python (futuro):** Integração de funcionalidades no back-end.
+Estrutura escalável para futura integração de login/cadastro.
 
-## Objetivos do Projeto 🎯
+## Tecnologias 💻
+Front-End	Back-End (Futuro)
+✔ HTML5	✔ Python
+✔ CSS3 (Flexbox/Grid)	✔ APIs REST
+✔ JavaScript (DOM, localStorage)	✔ Banco de Dados
 
-1. Desenvolver habilidades em front-end com HTML, CSS e JavaScript e Python.
-2. Aprimorar a experiência do usuário com funcionalidades interativas.
-3. Explorar integração de back-end com Python para funcionalidades futuras.
+## Objetivos 🎯
+Dominar HTML/CSS avançado (semântica, acessibilidade, Grid/Flexbox).
+
+Implementar lógica JavaScript pura (manipulação de DOM, eventos).
+
+Preparar base para integração back-end (estrutura modular).
 
 ## Melhorias Futuras 🔧
-Implementação de back-end com Python para gerenciamento de estoque e login de usuários.
-Integração com sistemas de pagamento para concluir compras.
-Melhorias na UI/UX com animações e transições.
+Autenticação de usuários e gerenciamento de perfil.
+
+Sistema de pagamento (ex.: Mercado Pago).
+
+Otimizações: SEO, desempenho (Lighthouse), testes.
 
 ## Contribuições 🤝
-Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests e reportar issues.
+Contribuições são bem-vindas! Reporte bugs ou sugira melhorias via issues ou pull requests.

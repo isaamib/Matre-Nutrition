@@ -10,7 +10,7 @@ function showSlide(index) {
     } else {
         currentSlide = index;
     }
-    slider.style.transform = `translateX(-${currentSlide * 100}vw)`; // Usa vw para ocupar toda a tela
+    slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
 }
 
 function nextSlide() {
@@ -21,16 +21,15 @@ function prevSlide() {
     showSlide(currentSlide - 1);
 }
 
-// Automatic Slide
 setInterval(() => {
     nextSlide();
-}, 3000); // Change slide every 3 seconds
+}, 3000); 
 
 const countdownElement = document.getElementById('countdown');
 const promoBanner = document.getElementById('promo-banner');
 const closeButton = document.getElementById('close-banner');
 
-let timeLeft = 1800; // 30 minutos em segundos
+let timeLeft = 1800; 
 
 const countdownTimer = setInterval(() => {
     const minutes = Math.floor(timeLeft / 60);
@@ -46,23 +45,21 @@ const countdownTimer = setInterval(() => {
 }, 1000);
 
 closeButton.addEventListener('click', () => {
-    promoBanner.style.display = 'none'; // Esconde o banner ao clicar no botão
+    promoBanner.style.display = 'none'; 
 });
 
 const btnCart = document.querySelector('.btn-cart');
 
-// Função para abrir/fechar o carrinho
 btnCart.addEventListener('click', function () {
-    const cartCard = document.getElementById('cart-card'); // Supondo que este elemento existe no HTML
+    const cartCard = document.getElementById('cart-card'); 
     if (cartCard) {
-        cartCard.classList.toggle('show');  // Exibe ou oculta o card
+        cartCard.classList.toggle('show'); 
     } else {
         console.error('Elemento cartCard não encontrado!');
     }
 });
 
-// Função para fechar o carrinho
-const closeCartBtn = document.getElementById('close-cart-btn'); // Supondo que este elemento também existe no HTML
+const closeCartBtn = document.getElementById('close-cart-btn');
 if (closeCartBtn) {
     closeCartBtn.addEventListener('click', function () {
         const cartCard = document.getElementById('cart-card');
@@ -74,7 +71,6 @@ if (closeCartBtn) {
     console.error('Elemento closeCartBtn não encontrado!');
 }
 
-// Pesquisa de produtos
 window.onload = function() {
     document.getElementById('search-header').onkeyup = function() {
         searchFunction();
@@ -85,12 +81,11 @@ window.onload = function() {
         
         let produtos = document.getElementsByClassName('produto');
 
-        // Loop através de cada produto e verifica se o texto inclui o termo de pesquisa
         for (let i = 0; i < produtos.length; i++) {
             if (produtos[i].innerHTML.toLowerCase().includes(input)) {
-                produtos[i].style.display = "";  // Exibe o produto
+                produtos[i].style.display = "";  
             } else {
-                produtos[i].style.display = "none";  // Oculta o produto
+                produtos[i].style.display = "none";  
             }
         }
     }

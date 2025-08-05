@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -11,25 +10,22 @@
     flex-wrap: wrap;
 }
 
-/* Body */
 body {
     background-color: #ffffff;
     color: #ffffff;
     line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
     background-color: #000000;
     padding: 0px;
 }
 
-/* Barra de menu */
 nav {
     display: flex;
-    justify-content: space-between; /* Espaça os itens entre o início e o fim */
+    justify-content: space-between;
     align-items: center;
-    background-color: #000000; /* Cor de fundo para o menu */
+    background-color: #000000;
     padding: 10px 20px;
 }
 
@@ -40,12 +36,11 @@ nav a {
     display: flex;
 }
 
-/* Itens de navegação centralizados */
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Centraliza os itens no meio */
-    flex: 1; /* Ocupa todo o espaço possível */
+    justify-content: center;
+    flex: 1;
     padding: 0;
     margin: 0;
 }
@@ -55,13 +50,13 @@ nav ul li {
 }
 
 nav ul li:first-child {
-    margin-left: 0; /* Remove margem à esquerda do primeiro item */
+    margin-left: 0;
 }
 
 nav ul li ul.submenu li a {
     padding: 10px 20px;
     display: block;
-    color:  #000000;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -98,7 +93,7 @@ nav button:hover {
 }
 
 .btn {
-    background-color: #ff7300; /* Cor de fundo do botão */
+    background-color: #ff7300;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -112,9 +107,6 @@ nav button:hover {
     background-color: #ffbc0a;
 }
 
-/* Fim barra de menu*/
-
-/* Seção de Produtos */
 .produtos {
     padding: 20px 200px;
     background-color: #ffffff;
@@ -127,11 +119,9 @@ nav button:hover {
     font-size: 2rem;
 }
 
-/* Grid dos Produtos */
 .produtos-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Três colunas */
     gap: 20px;
     justify-items: center;
 }
@@ -139,14 +129,12 @@ nav button:hover {
 @media (max-width: 1024px) {
     .produtos-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* Duas colunas em telas menores */
     }
 }
 
 @media (max-width: 768px) {
     .produtos-grid {
         grid-template-columns: 1fr;
-        /* Uma coluna em telas muito pequenas */
     }
 }
 
@@ -196,7 +184,6 @@ nav button:hover {
     background-color: #ffbc0a;
 }
 
-/* Rodapé */
 footer {
     background-color: #ff7300;
     color: white;
@@ -225,7 +212,6 @@ footer ul li:hover {
     cursor: pointer;
 }
 
-/* Estilos Responsivos */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -242,7 +228,6 @@ footer ul li:hover {
     }
 }
 
-/* Categorias e Menu Suspenso */
 section.categorias {
     display: flex;
     justify-content: center;
@@ -271,25 +256,24 @@ section.categorias ul li:hover {
     flex-wrap: wrap;
 }
 
-/* Menu suspenso inicialmente escondido */
 section.categorias ul .submenu {
     display: none;
     position: absolute;
-    top: 100%; /* Coloca o submenu logo abaixo do item pai */
+    top: 100%;
     left: 0;
     background-color: #ffffff;
     padding: 10px;
     border: 0 solid #f39c12;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    width: 200px; /* Define uma largura específica para o submenu */
+    width: 200px;
     flex-wrap: wrap;
 }
 
 section.categorias ul .submenu li {
     padding: 10px;
     margin-left: 1px;
-    width: 100%; /* Ajusta o tamanho dos itens do submenu */
+    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -298,18 +282,15 @@ section.categorias ul .submenu li:hover {
     flex-wrap: wrap;
 }
 
-/* Exibe o menu suspenso ao passar o mouse sobre o item pai */
 section.categorias ul li:hover .submenu {
     display: block;
     flex-wrap: wrap;
 }
 
-/* Slider de Imagens */
 .slider-container {
     position: relative;
-    width: 100vw; /* Largura ajustada */
-    height: 300px; /* Altura ajustada */
-
+    width: 100vw;
+    height: 300px;
     margin: 0;
     margin-top: 0px;
     overflow: hidden;
@@ -317,7 +298,7 @@ section.categorias ul li:hover .submenu {
 
 .slider {
     display: flex;
-    width: 100%; /* Três slides, então 300% */
+    width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
     position: absolute;
@@ -332,7 +313,7 @@ section.categorias ul li:hover .submenu {
 .slide img {
     width: 100vw;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem ocupe o slide sem distorcer */
+    object-fit: cover;
 }
 
 button.prev, button.next {
@@ -358,14 +339,11 @@ button:focus {
     outline: none;
 }
 
-/* Fim Slider de Imagens */
-
-/* Estilo de Login e Cadastro */
 .user-auth {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    margin-left: auto; /* Empurra login/cadastro para a direita */
-    gap: 10px; /* Espaçamento entre os botões */
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
 }
 
 .user-auth .auth-link {
@@ -397,7 +375,7 @@ button:focus {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: linear-gradient(135deg, #ff0000, #ff8800, #ff5100); /* Gradiente do vermelho para o laranja */
+    background: linear-gradient(135deg, #ff0000, #ff8800, #ff5100);
     color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
@@ -406,16 +384,16 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px; /* Ajuste a largura conforme necessário */
+    width: 300px;
     text-align: center;
 }
 
 #buy-link {
-    margin-top: 10px; 
+    margin-top: 10px;
     color: white;
     font-weight: bold;
-    text-decoration: underline; 
-    }
+    text-decoration: underline;
+}
 
 #close-banner {
     background: none;
@@ -429,44 +407,41 @@ button:focus {
 }
 
 #product-image {
-    width: 100%; /* A imagem ocupará toda a largura do banner */
+    width: 100%;
     border-radius: 5px;
 }
 
 #countdown {
     font-size: 1.3em;
     font-weight: bold;
-    margin-top: 0; /* Espaço entre o texto e o cronômetro */
+    margin-top: 0;
     color: #000000;
 }
 
 #promo-banner span {
-    font-size: 1.5em; /* Aumenta o tamanho da fonte */
-    font-weight: bold; /* Torna o texto em negrito */
-    margin-top: 0; /* Espaço entre a imagem e o texto */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
 }
 
 .btn-veja-mais {
-    background-color: #ff7300; /* Cor de fundo */
-    color: white; /* Cor do texto */
+    background-color: #ff7300;
+    color: white;
     border: none;
-    padding: 10px 20px; /* Ajuste do espaçamento interno */
-    border-radius: 50px; /* Botão arredondado */
+    padding: 10px 20px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    margin: 20px auto;
     margin-top: 40px;
-    display: block; /* Garante que o botão ocupe uma linha inteira */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn-veja-mais:hover {
-    background-color: #ffbc0a; /* Cor de fundo ao passar o mouse */
+    background-color: #ffbc0a;
 }
-
-/*CARRINHO DE COMPRAS AO CLICAR NO BOTÃO*/
-/*CARRINHO DE COMPRAS AO CLICAR NO BOTÃO*/
 
 .btn-cart {
     display: flex;
@@ -478,141 +453,131 @@ button:focus {
     border: none;
     background-color: #ff8800;
     position: fixed;
-    bottom: 80px; 
-    right: 80px; 
-    cursor: grab; 
+    bottom: 80px;
+    right: 80px;
+    cursor: grab;
     z-index: 1000;
 }
 
 .btn-cart:active {
-    cursor: grabbing; 
+    cursor: grabbing;
 }
-  
-  .btn-cart::after {
+
+.btn-cart::after {
     content: attr(data-quantity);
     width: fit-content;
     height: fit-content;
     position: absolute;
     font-size: 15px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
     opacity: 0;
     visibility: hidden;
     transition: .2s linear;
     top: 115%;
-  }
-  
-  .icon-cart {
+}
+
+.icon-cart {
     width: 24.38px;
     height: 30.52px;
     transition: .2s linear;
-  }
-  
-  .icon-cart path {
+}
+
+.icon-cart path {
     fill: rgb(255, 255, 255);
     transition: .2s linear;
-  }
-  
-  .btn-cart:hover > .icon-cart {
+}
+
+.btn-cart:hover > .icon-cart {
     transform: scale(1.2);
-  }
-  
-  .btn-cart:hover > .icon-cart path {
+}
+
+.btn-cart:hover > .icon-cart path {
     fill: rgb(255, 255, 255);
-  }
-  
-  .btn-cart:hover::after {
+}
+
+.btn-cart:hover::after {
     visibility: visible;
     opacity: 1;
     top: 105%;
-  }
+}
 
-  /* Estilo do card do carrinho */
-  .cart-card {
+.cart-card {
     position: fixed;
-    right: 30px; 
-    bottom: 80px; 
-    width: 400px; 
+    right: 30px;
+    bottom: 80px;
+    width: 400px;
     padding: 20px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     border-radius: 8px;
     z-index: 1001;
-    display: none; 
-    font-family: Arial, sans-serif; 
+    display: none;
+    font-family: Arial, sans-serif;
 }
 
-/* Botão de fechar (X) */
 .close-btn {
-    background: none; 
-    border: none; 
-    color: #333; 
-    font-size: 24px; 
-    cursor: pointer; 
-    position: absolute; 
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
     top: 10px;
-    right: 10px; 
+    right: 10px;
 }
 
-/* Título do carrinho */
 .cart-card h2 {
     margin: 0;
     font-size: 24px;
-    color: #333; 
+    color: #333;
 }
 
-/* Estilo dos itens do carrinho */
 .cart-items {
-    max-height: 250px; 
-    overflow-y: auto; 
-    margin-bottom: 20px; 
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 20px;
 }
 
-/* Estilo do total do carrinho */
 .cart-total {
     display: flex;
-    justify-content: space-between; 
-    font-size: 18px; 
-    font-weight: bold; 
-    color: #333; 
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
 
-/* Botão de finalizar compra */
 #checkout-btn {
-    background-color: #ff8800; 
+    background-color: #ff8800;
     color: white;
-    border: none; 
+    border: none;
     padding: 10px;
     cursor: pointer;
-    width: 100%; 
-    border-radius: 5px; 
-    transition: background-color 0.3s; 
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 #checkout-btn:hover {
-    background-color: #e07a00; 
+    background-color: #e07a00;
 }
-
 
 .cart-card.show {
-    display: block; 
+    display: block;
 }
 
-/*CARRINHO DE COMPRAS AO CLICAR NO BOTÃO*/
-/*CARRINHO DE COMPRAS AO CLICAR NO BOTÃO*/
-
-  .card-container {
+.card-container {
     display: flex;
-    justify-content: space-around; /* Para espaçar os cards */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se não houver espaço suficiente */
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 50px;
     padding: auto;
 }
 
 section.card {
     position: relative;
-    width: 90%; /* Largura dos cards */
-    height: 300px; /* Altura dos cards */
+    width: 90%;
+    height: 300px;
     background-color: #ff7300;
     border-radius: 10px;
     display: flex;
@@ -673,25 +638,18 @@ section.card {
     line-height: 1.4;
 }
 
-/* Commands to change the shadows in dark mode
-@media (prefers-color-scheme: dark) {
-    .card:hover {
-    box-shadow: 0 8px 16px #000000;
-    }
-}*/
-
 .flutuante {
     background-color: #ff7300;
     height: 200px;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     color: white;
     font-size: 2rem;
     text-align: center;
     margin-top: 40px;
-    position: relative; 
+    position: relative;
     overflow: hidden;
 }
 
@@ -700,7 +658,7 @@ section.card {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.6);
     transition: opacity 0.7s ease;
@@ -765,16 +723,14 @@ section.card {
     transform: translate(-50%, -50%) scale(2);
 }
 
-
-
 .search-header {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
-  
-  .search-header__input {
+}
+
+.search-header__input {
     font-family: inherit;
     font-size: 16px;
     background-color: #ffffff;
@@ -787,14 +743,8 @@ section.card {
     height: 48px;
     transition: all ease-in-out 0.5s;
     margin-right: -2rem;
-    opacity: 1;
-    text-align: center;
-  }
-  
-  .search-header__input::-webkit-input-placeholder {
-    font-weight: 100;
-    color: #ff932e;
-  }
+    opacity: 1
+}
   
   .search-header__input:focus + .search-header__button {
     background-color: transparent;
